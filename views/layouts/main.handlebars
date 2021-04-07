@@ -12,3 +12,30 @@
 <body>
   <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
+      <h1>
+        <a href="/">Chubby Bunny!</a>
+      </h1>
+      <nav>
+        {{#if logged_in}}
+        <a href="/login">Login</a> |
+        <button class="button" id="login">Login</button>
+        {{else}}
+        <a href="/register">Register</a>
+        <button class="button" id="register">Register</button>
+        {{/if}}
+      </nav>
+    </header>
+    <main class="container container-fluid mt-5">
+      {{{ body }}}
+    </main>
+    <footer>
+      
+    </footer>
+  </div>
+
+  {{#if logged_in}}
+  <script src="/js/main.js"></script>
+  {{/if}}
+</body>
+
+</html>
