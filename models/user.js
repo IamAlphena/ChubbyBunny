@@ -43,7 +43,7 @@ User.init(
           newUserData.password = await bcrypt.hash(newUserData.password, 10);
           return newUserData;
         },
-        // may need to add before Create
+        // may need to add beforeUpdate
       },
       sequelize,
       timestamps: false,
