@@ -1,15 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<div class="loginPage">
-    <h1>Chubby Bunny</h1>
-    <form method="post">
-      <p><input type="text" name="login" value="" placeholder="Username"></p>
-      <p><input type="password" name="password" value="" placeholder="Password"></p>
-      
-      <div class="submit"><input type="submit" value="Login"></div>
-      <div id = "button"><a href="register.html">Register</a></div>
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="login.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="container">
+      <div class="title">Chubby Bunny!</div>
+  <div class="content">
+
+    <form action="#">
+
+      <div class="user-details">
+
+
+        <div class="input-box">
+          <span class="details">Username</span>
+          <input type="text" placeholder="Enter your username" required>
+        </div>
+
+        <div class="input-box">
+          <span class="details">Password</span>
+          <input type="text" placeholder="Enter your password" required>
+        </div>
+
+        <div class="button">
+          <input type="submit" value="Log In">
+        </div>
+
+        <div class="button">
+          <a href="register.html">Sign Up</a>
+        </div>
+
+      </div>
+
 
     </form>
+
   </div>
-</div>
+  
+</body>
+
+
 </html>
