@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-auto">
+    <h2>Welcome, {{name}}!</h2>
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col-md-6">
+    <h3>Create or Update your Profile:</h3>
+
+    <form class="form new-project-form">
+      <div class="form-group">
+        <label for="user-name">Username:</label>
+        <input class="form-input" type="text" id="user-name" name="user-name" />
+      </div>
+      <div class="form-group">
+        <label for="profile-picture">Profile Picture</label>
+        <input class="form-input" type="picture" id="profile-picture" name="profile-picture" />
+      </div>
+      <div class="form-group">
+        <label for="theme">Theme:</label>
+        <input class="form-input" type="theme" id="theme" name="theme" />
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Create</button>
+      </div>
+    </form>
+  </div>
+
+<script src="./js/profile.js"></script>
