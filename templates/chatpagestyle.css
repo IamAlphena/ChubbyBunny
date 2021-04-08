@@ -1,0 +1,75 @@
+/*****
+Dark Mode Color Palette
+Black: #151515
+Purple: #301B3F
+Grey: #3C415C
+OffWhite: #B4A5A5
+*****/
+
+:root {
+    --base: #151515;
+    --accent: #3C415C;
+    --font: #B4A5A5;
+    --offAccent: #585374;
+    --otherAccent: #301B3F;
+}
+
+body {
+    background-color: var(--base);
+    color: var(--font);
+    margin: 0 auto;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.topbar {
+    border: 1px solid var(--offAccent);
+    height: 45px;
+    width: 100%;
+}
+
+.sidenav {
+    border: 1px solid var(--accent);
+    height: 800px;
+    width: 250px;
+    background-color: var(--accent);
+    display: inline-block;
+    vertical-align: top;
+}
+
+.main{
+    background-color: var(--offAccent);
+    width: 500px;
+    height: 800px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.main header {
+    height: 75px;
+    padding: 15px;
+    border: 1px solid var(--font);
+}
+
+.chatbox{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    justify-content: center;
+    border: 1px solid var(--font);
+    height: 700px;
+}
+
+.message{
+    background-color: var(--base);
+    line-height: 25px;
+    max-width: 90%;
+    display: inline-block;
+    border: 1px solid var(--font);
+    height: 100px;
+}
+
+
+.userinfo {
+    display: block;
+}
