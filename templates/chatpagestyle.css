@@ -64,11 +64,14 @@ body {
     background-color: var(--base);
     line-height: 25px;
     max-width: 90%;
-    display: inline-block;
+    display: block;
     border: 1px solid var(--font);
     height: 100px;
 }
 
+.message li{
+    display: block;
+}
 
 .userinfo {
     display: block;
