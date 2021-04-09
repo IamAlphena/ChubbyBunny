@@ -10,8 +10,11 @@ OffWhite: #B4A5A5
     --base: #151515;
     --accent: #3C415C;
     --font: #B4A5A5;
+    --fontdark: #000;
     --offAccent: #585374;
     --otherAccent: #301B3F;
+    --messageA: #836A94;
+    --messageB: #7D7483;
 }
 
 body {
@@ -52,8 +55,6 @@ body {
 }
 
 .chatbox{
-    display: flex;
-    flex-wrap: wrap;
     overflow-y: scroll;
     justify-content: center;
     border: 1px solid var(--font);
@@ -61,18 +62,41 @@ body {
 }
 
 .message{
-    background-color: var(--base);
     line-height: 25px;
     max-width: 90%;
     display: block;
     border: 1px solid var(--font);
+    border-bottom: 1px solid #fff;
     height: 100px;
+    color: var(--fontdark)
+
 }
 
-.message li{
-    display: block;
+.you {
+    background-color: var(--messageA);  
+    text-align: left;
 }
+
+.me {
+    background-color: var(--messageB);
+    text-align: right;
+}
+
 
 .userinfo {
     display: block;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fff;
+    margin-left: 15px;
+}
+
+
+.us{
+    margin-left: 395px;
 }
