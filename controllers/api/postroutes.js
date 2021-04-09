@@ -24,7 +24,6 @@ router.post('/', async (req, res) => {
        const chatMessages = await Chat.create({
         post: req.body.post,
         user_id: req.body.user_id,
-        name: req.body.name,
     });
     res.status(200).json(chatMessages);
    } catch (err) {
