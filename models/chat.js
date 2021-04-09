@@ -12,17 +12,17 @@ Chat.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
     post: {
       type: DataTypes.STRING,
       allowNull: false,
     },
     user_id: {
       type: DataTypes.INTEGER,
-      foreignKey: true,
+      references: {
+        model: 'user',
+        key: 'id',
+      },
+      // foreignKey: true,
     },
   },
   {
