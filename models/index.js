@@ -1,7 +1,17 @@
-// const User = require('./user'); 
-// const Post = require('./chat');
+const User = require('./user'); 
+const Chat = require('./chat');
 
 
-// module.exports = { User };
-// module.exports = { Chat };
+//one user with many chats
+User.hasMany(Chat,{
+    foreignKey: 'user_id',
+    onDelete: 'CASCADE'
+})
+
+Chat.belongsTo(User, {
+    foreignKey: 'user_id'
+})
+
+module.exports = { User };
+module.exports = { Chat };
 
