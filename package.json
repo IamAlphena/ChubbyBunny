@@ -21,11 +21,13 @@
   "homepage": "https://github.com/IamAlphena/ChubbyBunny#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.3.0",
+    "express-session": "^1.17.1",
     "mysql2": "^2.2.5",
-    "sequelize": "^5.21.7",
+    "sequelize": "^6.3.5",
     "socket.io": "^4.0.1"
   }
 }
