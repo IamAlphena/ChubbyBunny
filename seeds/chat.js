@@ -7,7 +7,6 @@ const chatData = [{
     }];
 
 const seedChat = async () =>{
-    // await sequelize.sync({force: true});
     await Chat.bulkCreate(chatData); }
 
 module.exports = seedChat;
