@@ -1,12 +1,12 @@
 const signupFormHandler = async (event) => {
   event.preventDefault();
 
-  const email = document.querySelector("#email-signup").value;
-  console.log("email:", value);
-  const userName = document.querySelector("#username-signup").value;
-  const password = document.querySelector("#password-signup").value;
+  const email = document.querySelector("#email-signup").value.trim();
+  const userName = document.querySelector("#username-signup").value.trim();
+  const password = document.querySelector("#password-signup").value.trim();
   if (userName && password && email) {
-    const response = await fetch("/api/users/register", {
+    // something is wrong with the callback. I've tried every combination of fetch route
+    const response = await fetch("api/users/register", {
       method: "POST",
       body: JSON.stringify({email, userName, password}),
       headers: { "Content-Type": "application/json" },
@@ -22,3 +22,4 @@ const signupFormHandler = async (event) => {
 };
 
 document.querySelector("#signup").addEventListener("click", signupFormHandler);
+// Promise<void> === undefined?

@@ -48,7 +48,7 @@ router.get('/login', (req, res) => {
     try {
       const newUser = await User.create({
         email: req.body.email,
-        name: req.body.name,
+        name: req.body.userName,
         password: req.body.password,
       });
       console.log("added:", newUser);
