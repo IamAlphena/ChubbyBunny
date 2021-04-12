@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chubby Bunny!</title>
-  <link rel="stylesheet" href="/css/jass.css">
+  {{!-- <link rel="stylesheet" href="/css/jass.css"> --}}
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -17,11 +17,12 @@
       </h1>
       <nav>
         {{#if logged_in}}
-        <a href="/login">Login</a> |
-        <button class="button" id="login">Login</button>
+        <a id="logout" href="/logout">Logout</a> |
+        {{!-- <button class="button" id="login">Login</button> --}}
         {{else}}
-        <a href="/register">Register</a>
-        <button class="button" id="register">Register</button>
+        <a id="signup" href="/register">Register</a>
+        <a id="login" href="/login">Login</a>
+        {{!-- <button class="button" id="register">Register</button> --}}
         {{/if}}
       </nav>
     </header>

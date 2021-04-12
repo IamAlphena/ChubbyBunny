@@ -33,4 +33,29 @@ router.get('/login', (req, res) => {
     res.render('login');
   });
 
+  router.get('/register', (req, res) => {
+    // If the user is already logged in, redirect the request to another route
+    if (req.session.logged_in) {
+      res.redirect('/');
+      return;
+    }
+  
+    res.render('register');
+  });
+
+    //  create email, username, password in that order
+  router.post("/register", async (req, res) => {
+    try {
+      const newUser = await User.create({
+        email: req.body.email,
+        name: req.body.userName,
+        password: req.body.password,
+      });
+      console.log("added:", newUser);
+      } catch (err) {
+      res.status(500).json(err);
+    }
+  });
+
+
 module.exports = router;
