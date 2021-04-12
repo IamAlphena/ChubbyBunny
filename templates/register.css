@@ -17,6 +17,22 @@
     font-family: 'Fantasy';
 }
 
+.header{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: 50;
+}
+
+.header img {
+    width: 330px;
+    height: 330px;
+    padding: 10px;
+}
+
 
 body{
     height: 100vh;
@@ -36,12 +52,17 @@ body{
     padding: 25px 30px;
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    position: relative;
+
+    opacity: 0.9;
 }
 
 .container .title{
     font-size: 25px;
     font-weight: 500;
     position: relative;
+
+    text-align: center;
 }
 
 .container .title::before{
