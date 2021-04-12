@@ -17,11 +17,12 @@
       </h1>
       <nav>
         {{#if logged_in}}
-        <a href="/login">Login</a> |
-        <button class="button" id="login">Login</button>
+        <a href="/logout">Logout</a> |
+        {{!-- <button class="button" id="login">Login</button> --}}
         {{else}}
         <a href="/register">Register</a>
-        <button class="button" id="register">Register</button>
+        <a href="/login">Login</a>
+        {{!-- <button class="button" id="register">Register</button> --}}
         {{/if}}
       </nav>
     </header>
