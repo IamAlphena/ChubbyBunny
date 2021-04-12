@@ -40,9 +40,11 @@ app.use(express.static(path.join(__dirname, '/public')));
 
 io.on('connection', (socket) => {
   socket.on('chat message', (msg) => {
-    io.emit('chat message', msg);
+    io.emit('chat message', {msg, username: "placeholder"});
   });
 });
+// per tucker in office hours - - - 
+// user logs in, stored in session, emit chat message - pass along user that emitted the message.
 
 app.use(routes);
 
