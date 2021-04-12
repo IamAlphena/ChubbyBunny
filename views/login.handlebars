@@ -1,23 +1,66 @@
-<div class="row">
-  <div class="col-md-6">
-    <h2>Login</h2>
 
-    <form class="form login-form">
-      <div class="form-group">
-        <label for="username-login">Username:</label>
-        <input class="form-input" type="text" id="username-login" />
-      </div>
-      <div class="form-group">
-        <label for="password-login">Password:</label>
-        <input class="form-input" type="password" id="password-login" />
-      </div>
-      {{!-- <div class="form-group">
-        <button class="btn btn-primary" id="login" type="submit">Login</button>
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="register">Register</button>
-      </div> --}}
-    </form>
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/css/login.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <div class="header">
+    <img src="../images/ani-adigyozalyan-v6GfQ7gLlvY-unsplash.jpg" alt="bunny1" />
+    <img src="../images/pablo-martinez-eXLCx0XBaUE-unsplash.jpg" alt="bunny2" />
+    <img src="../images/sgalagaev--5iSCtrJX5o-unsplash.jpg" alt="bunny3" />
+    <img src="../images/janan-lagerwall-p2UbTX6Uoig-unsplash.jpg" alt="bunny4" />
+    <img src="../images/kanashi-4mN6MNWuEbs-unsplash.jpg" alt="bunny5" />
+    <img src="../images/joshua-daniel-ZW9fonU39Uc-unsplash.jpg" alt="bunny6" />
+    <img src="../images/sgalagaev-_qlg6aa4XgU-unsplash.jpg" alt="bunny7" />
+    <img src="../images/isaac-demeester-o6GS1eOmCJ0-unsplash.jpg" alt="bunny8" />
   </div>
 
+
+
+      <div class="container">
+          <div class="title">Chubby Bunny</div>
+      <div class="content">
+          
+          <form action="#">
+      
+          <div class="user-details">
+      
+              <div class="input-box" id="userName">
+              <span class="details ">Username</span>
+              <input type="text" placeholder="Enter your username" required >
+              </div>
+      
+              <div class="input-box" id="password">
+              <span class="details">Password</span>
+              <input type="text" placeholder="Enter your password" required>
+              </div>
+          
+      
+          </div>
+      
+          <div class="button"  id="submitBtn">
+              <input type="submit" value="Log In">
+              </div>
+      
+      
+          <div class="button">
+              <a href="register.handlebars">Sign Up</a>
+          </div>
+          
+      
+          </form>
+      
+      </div>
+      
+</body>
+
   <script src="./js/login.js"></script>
+  
+  
