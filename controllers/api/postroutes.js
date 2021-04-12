@@ -34,3 +34,5 @@ router.post('/', async (req, res) => {
 //delete own message
 
 
+module.exports = router;
+
