@@ -42,6 +42,20 @@ router.get('/login', (req, res) => {
   
     res.render('register');
   });
-  
+
+    //  create email, username, password in that order
+  router.post("/register", async (req, res) => {
+    try {
+      const newUser = await User.create({
+        email: req.body.email,
+        name: req.body.name,
+        password: req.body.password,
+      });
+      console.log("added:", newUser);
+      } catch (err) {
+      res.status(500).json(err);
+    }
+  });
+
 
 module.exports = router;
