@@ -24,13 +24,13 @@ console.log("1: ", userName, password)
       body: JSON.stringify({ userName, password }),
       headers: { "Content-Type": "application/json" },
     });
-    console.log(response);
+    console.log("2:",response);
 
     if (response.ok) {
-      document.location.reload();
+      document.location.redirect("homepage");
     } else {
-      console.log(await response.json());
-      alert("Failed to log in");
+      console.log("3:",response);
+      alert("Failed to log in/login.js(test)");
     }
   }
 };

@@ -13,7 +13,7 @@ const signupFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace("/");
+      document.location.redirect("/");
     } else {
       console.log("sign up:", response);
       alert("Failed to register");
